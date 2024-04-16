@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- enable media queries and responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miguel Panchon">
+  <meta name="keywords" content="buscar, imágenes, Pinterest, elegir imágenes">
+  <meta name="keywords" content="search, images, pics, pixs, select images">
+  <meta name="description" content="Web page that fetches pictures from Unsplash via an endpoint (API)">
+  <title>Pinterest 2.6 pruebas</title>
+</head>
+
+
+<body class="mainContainer">
+  <aside>
+
+    <section class="invisible5">
+      <img class="img_logo" src="./MP_logo.JPG" alt="logo Miguel Panchon inspired vaguely from Pinterest">
+    </section>
+
+    <section class="search-container active_marker flash">
+      <input type="text" id="search-query" class="search-input" placeholder="Type keywords...">
+      <button class="btn_search" id="search-button">Search</button>
+    </section>
+
+
+  </aside>
+
+  <main>
+    <section class="intro">
+      <p id="no_photos" class="intro2"></p>
+    </section>
+
+    <section class="section_photos div_photos1" id="photos">
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li>Version 2, April 2024 </li>
+      <li><a href="https://github.com/miguelpanchon/Pinterest/blob/main/README.md">readme.md</a></li>
+      <li>this code in <a href="https://github.com/miguelpanchon/Pinterest">GitHub</a></li>
+      <li><a href="https://miguelpanchon-porfolio.netlify.app/">My porfolio</a></li>
+      <li>Optimized for <a href="https://www.mozilla.org/es-ES/firefox/new/">Firefox</a></li>
+
+    </ul>
+  </footer>
+
+  <script type="module" src="./src/config.js"></script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

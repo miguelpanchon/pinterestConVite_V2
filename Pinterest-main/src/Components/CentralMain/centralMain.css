@@ -1,0 +1,104 @@
+/*background of body is set in styles.css*/
+
+
+main {
+  --no_photos_color: #555;
+
+}
+
+h1 {
+  margin-left: 3.5svh;
+  text-align: Left;
+  font-size:3em;
+}
+
+.intro {
+  margin-top:30px;
+}
+
+
+
+.photos {
+  padding:0.8svw;
+}
+
+
+.div_photos1 {
+  width: 100svw;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:space-around; /* main axis */
+  align-items: center; /*cross axis */
+  overflow:hidden;
+  gap:1rem;
+
+  padding-left:2svw;
+  padding-right:2svw;
+}
+
+.no-photos-message {
+  font-size: 3rem;
+  font-family: arial;
+  text-align: center;
+
+}
+
+#photos.no-photos { 
+  height: 10px;
+  margin-left: 2.5svh;
+ }
+
+ 
+/* ***************** */
+
+/* media queries */
+
+
+@media screen and (min-width:180px)and (max-width: 329px){
+  h1 {
+    margin-left: 0svh;
+    text-align: Left;
+    font-size:1.5em;
+    text-align:center;
+  }
+  .intro {
+    margin-top:50px;
+  }
+
+}
+
+
+@media screen and (min-width:330px)and (max-width: 768px){
+  h1 {
+    margin-left: 0svh;
+    text-align: Left;
+    font-size:1.8em;
+    text-align:center;
+  }
+  .intro {
+    margin-top:90px;
+  }
+
+}
+
+@media screen and (min-width:769px) and (max-width: 1000px) { 
+  h1 {
+    margin-left: 2.0svh;
+    text-align: Left;
+    font-size: 2.2em;
+  }
+  .intro {
+    margin-top:30px;
+  }
+}
+
+@media screen and (min-width:1001px)and (max-width: 1318px) {
+  h1 {
+    margin-left: 2.0svh;
+    text-align: Left;
+    font-size:2.5em;
+  }
+}
+

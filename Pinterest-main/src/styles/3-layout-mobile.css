@@ -1,0 +1,23 @@
+ /* mobile */
+
+  @media screen and (min-width: 20px){
+  body {
+/*   
+   --padding-categorias:0px;
+   --fondo-clarito: white;
+   --fondo-oscuro: black;
+   --letra-clarita: white;
+   --letra-oscura: black;
+   --letra-color: orange; */
+ /* font-size: small; */
+ display: flex;
+ flex-direction: column;
+ /* height:auto; */
+ /* background-color:var(--letra-color); */
+ } 
+
+ .mainContainer {
+  /* background-color: rgb(150, 247, 47); */
+ }
+
+ } 

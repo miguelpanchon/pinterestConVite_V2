@@ -1,0 +1,16 @@
+/* variable definition */
+footer {
+--back_color:aliceblue;
+}
+
+/* application of styles */
+footer {
+  background-color:var(--back_color);
+  border: 2px solid black;
+}
+
+footer p {
+  margin-left: 10px;
+  margin-top:  3svh;
+}
+

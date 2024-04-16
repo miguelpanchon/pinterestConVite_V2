@@ -1,0 +1,28 @@
+footer {
+  --back_color:yellow;
+  --border_color:rgb(22, 9, 128);
+  }
+  
+  /* specific styles */
+  footer {
+
+    background-color: var(--back_color);
+    border-top: 0.3svw solid var(--border_color);
+    border-bottom: 0.3svw solid var(--border_color);
+    margin-top: 0.2vh; /*get some distance with the pictures */
+    margin-bottom: 0vh;
+    height: auto;
+    width: auto;
+  }
+  
+  footer p {
+    margin-left: 4vh; 
+    font-size:3rem;
+    margin: 1svw;
+  }
+  
+
+
+
+
+/* media queries */

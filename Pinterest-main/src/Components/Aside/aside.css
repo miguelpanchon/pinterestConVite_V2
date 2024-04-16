@@ -1,0 +1,201 @@
+  body {
+    --light-color:white;
+    --dark-color:darkslategrey;
+    --border-dark-color:crimson;
+    --border-light-color: white;
+    --border-ultra-dark-color:black;
+    
+    
+    --animation-color1:#155263;
+    --animation-color2:#ff6f3c; 
+    --animation-color3:#ff9a3c; 
+    --animation-color4:#ffc93c; 
+    --animation-color5:#e9da3a;
+    
+  --button-color: white;
+  --button-background-color:grey;
+
+    }
+    
+    
+    aside {
+
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      width: 100%; 
+      margin: 0 auto;
+     
+      background-color: var(--light-color);   
+      border-bottom: 0.2svw solid var(--border-ultra-dark-color); 
+    }
+      
+    aside section {
+      display: flex;
+      flex-direction:row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: fit-content;
+      height:fit-content;
+      width: 33.333%; 
+      font-size: 2vw;
+      margin-right: 2vw;
+      /* for development only */
+      /* border: 2px solid var(--border-ultra-dark-color);  */
+
+    }
+
+
+    .img_logo {
+      height: 3.5rem; 
+      width: 3.5rem;
+      padding-top:2px;
+      padding-bottom:2px;
+      /* aspect-ratio: 1/1;  */
+    }
+    
+    
+    .btn_start {
+      height: fit-content;
+      width:fit-content;
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      border-radius: 10px; 
+      padding-left:1svw;
+      padding-right:1svw;
+      padding-top:0.4svw;
+      padding-bottom:0.5svw;
+      /* margin: 1svw; */ 
+    }
+    
+    .btn_create {
+      height: auto;
+      width: auto;
+      /* aspect-ratio: 1/1; */
+      background: transparent;
+      border: none; 
+    }
+    
+    .btn_explore {
+      height: auto;
+      width: auto;
+      background: transparent; 
+      border: none; 
+      padding: 1svw;
+    }
+    
+
+  .button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  /* Tooltip styles */
+  .tooltip {
+    position: relative;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 3svw;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 125%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .img_bell {
+    height: 4svw; 
+    width: auto;
+    /* margin-right:20svh; */
+
+  }
+
+  .img_dialogbox {
+    height: 4svw; 
+    width: auto;
+    /* margin-right:40svh; */
+  }
+
+
+
+
+
+
+/* **************************
+media query mobile
+************************** */
+@media (max-width: 329px) {
+  .invisible1, .invisible2, .invisible3, .invisible4, .invisible5 {
+    display:none; 
+  }
+
+  aside {
+    justify-content: center;
+    align-items: center;
+    height: 3rem; 
+    position: fixed; /* Set the position to fixed */
+    top: 0; /* Place it at the top of the viewport */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Set the width to 100% */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+
+}
+
+
+/* ************************
+media query tablet
+************************** */
+@media (min-width: 330px) and (max-width: 768px) {
+  .invisible1 {
+    display: none; 
+  }
+
+  aside {
+    justify-content: center;
+    align-items: center;
+    height: 5rem; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+  }
+
+}
+
+
+ /* ******************
+media query pc
+********************** */
+/* Styles for PCs or laptops with a minimum width of 1024 pixels */
+@media (min-width: 1024px) {
+  .img_logo {
+    height: 7rem; 
+    width: 7rem;
+    padding-top:2px;
+    padding-bottom:2px;
+    /* aspect-ratio: 1/1;  */
+  }
+
+
+}

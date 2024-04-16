@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- enable media queries and responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP-Pinterest</title>
+</head>
+
+
+<body class="mainContainer">
+  <aside>
+
+    <section class="invisible5">
+      <img class="img_logo" src="./MP_logo.JPG" alt="logo Miguel Panchon inspired vaguely from Pinterest">
+      <button class="btn_start tooltip invisible3">Start<span class="tooltiptext">inactive</span></button>
+      <button class="btn_explore tooltip invisible2">Explore<span class="tooltiptext">inactive</span></button>
+      <button class="btn_create tooltip invisible1">Create<span class="tooltiptext">inactive</span></button>
+    </section>
+
+    <section class="search-container active_marker flash">
+      <input type="text" id="search-query" class="search-input" placeholder="Type keywords...">
+      <button class="btn_search" id="search-button">Search</button>
+    </section>
+
+    <section class="section3 invisible4">
+      <img class="img_bell invisible3" src="./bell.JPG" alt="notification bell image">
+      <img class="img_dialogbox invisible1" src="./dialog_box.JPG" alt="dialog box image">
+    </section>
+  </aside>
+
+  <main>
+    <section class="intro">
+      <h1>Pinterest imitation </h1>
+      <p id="no_photos"></p>
+    </section>
+    <section class="section_photos">
+      <div id="photos" class="div_photos1"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>by Miguel Panchón, 2024 </p>
+    <p><a href="https://github.com/miguelpanchon/Pinterest/blob/main/README.md">readme.md</a></p>
+    <p>this code in <a href="https://github.com/miguelpanchon/Pinterest">GitHub</a></p>
+    <p><a href="https://miguelpanchon-porfolio.netlify.app/">My porfolio</a></p>
+    <p>Optimized for <a href="https://www.mozilla.org/es-ES/firefox/new/">Firefox</a></p>
+  </footer>
+
+  <script type="module" src="./src/main.js" defer></script>
+</body>
+
+</html>

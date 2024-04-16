@@ -1,0 +1,23 @@
+/* pc XL */
+@media screen and (min-width: 590px){
+
+  body {
+    /* background-color:rgb(231, 220, 27); */
+   --padding-categorias:0px;
+   --fondo-clarito: white;
+   --fondo-oscuro: black;
+   --letra-clarita: white;
+   --letra-oscura: black;
+   --letra-color: orange;
+   /* background-color:rgb(78, 95, 210); */
+  }
+    
+  
+  
+  .mainContainer {
+    background-color: rgb(231, 146, 253);
+   }
+  
+  
+    
+  }

@@ -1,0 +1,57 @@
+
+.card {
+  width: auto;
+  height:6rem;
+  overflow:hidden;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px 0 #104faf;
+  transition: transform 0.3s ease;
+  text-align: center;
+  font-size: 5vh;
+  /* color: #104faf; */
+  }
+
+
+.card:hover {
+  transform: scale(1.05);
+ border: 0.3svh solid #1423cb;  /*introduces glitches... better without */
+}
+
+
+
+/* ***************** */
+
+
+
+@media screen and (min-width:188px)and (max-width: 781px) {
+
+ .card {
+  width: 5rem;
+  height: 5rem;
+  overflow:hidden;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px 0 #104faf;
+  transition: transform 0.3s ease;
+  text-align: center;
+  font-size: 5vh;
+  /* color: #104faf; */
+  }
+
+  .card:hover {
+    transform: scale(1.00);
+   border: 0.3svh solid #1423cb;  /*introduces glitches... better without */
+  }
+}
+
+
+@media screen and (min-width:782px) and (max-width: 1000px) { 
+  .card { 
+    height: 10rem; 
+    width: 10rem;
+    margin: 0.7svw; 
+   }
+  }
+
+
+
+

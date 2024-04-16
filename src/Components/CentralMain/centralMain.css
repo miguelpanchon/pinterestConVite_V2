@@ -1,0 +1,69 @@
+/*background of body is set in styles.css*/
+
+
+main {
+  --no_photos_color: #555;
+
+}
+
+.intro {
+  margin-top:30px;
+}
+
+
+
+.photos {
+  padding:0.8svw;
+}
+
+
+.div_photos1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: greenyellow;
+}
+
+.no-photos-message {
+  font-size: 3rem;
+  font-family: arial;
+  text-align: center;
+
+}
+
+#photos.no-photos { 
+  height: 10px;
+  margin-left: 2.5svh;
+ }
+
+ 
+/* ***************** */
+
+/* media queries */
+
+
+@media screen and (min-width:180px)and (max-width: 329px){
+
+
+}
+
+
+@media screen and (min-width:330px)and (max-width: 768px){
+
+}
+
+@media screen and (min-width:769px) and (max-width: 1000px) { 
+
+}
+
+@media screen and (min-width:1001px)and (max-width: 1318px) {
+
+}
+

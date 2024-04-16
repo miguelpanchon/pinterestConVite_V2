@@ -1,0 +1,27 @@
+  /* mobile plus (bigger)*/
+
+@media screen and (min-width: 54px){
+  body {
+    /* background-color:rgb(231, 220, 27); */
+   --padding-categorias:0px;
+   --fondo-clarito: white;
+   --fondo-oscuro: black;
+   --letra-clarita: white;
+   --letra-oscura: black;
+   --letra-color: orange;
+  
+    } 
+  
+
+    .mainContainer {
+      /* background-color: rgb(44, 212, 241); */
+     }
+}
+
+
+
+
+
+
+
+

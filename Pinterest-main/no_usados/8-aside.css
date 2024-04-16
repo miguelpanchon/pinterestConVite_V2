@@ -1,0 +1,143 @@
+body {
+--light-color:white;
+--dark-color:darkslategrey;
+--border-dark-color:crimson;
+--border-light-color: white;
+--border-ultra-dark-color:black;
+
+
+--animation-color1:#155263;
+--animation-color2:#ff6f3c; 
+--animation-color3:#ff9a3c; 
+--animation-color4:#ffc93c; 
+--animation-color5:#e9da3a;
+
+/* --animation-color1:grey;
+--animation-color2: yellow; 
+--animation-color3: red; 
+--animation-color4: rgb(100, 3, 3); 
+--animation-color5: black; */
+}
+
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Set the width to 70% of the parent container */
+  margin: 0 auto; /* Center the aside element */
+  padding: 10px; /* Add some padding for spacing */
+  background-color: var(--light-color);
+  border-bottom: 2px solid var(--border-ultra-dark-color); /* Adjust the width and color as needed */
+}
+
+/* Additional styles for visual clarity */
+aside img {
+  max-width: 100px; /* Set a max-width for the images */
+}
+
+
+.img_logo {
+  height: 10svh; /* Set the fixed height */
+  width: auto;
+  aspect-ratio: 1/1;
+}
+
+.img_bell {
+  height: 4svh; /* Set the fixed height */
+  width: auto;
+  aspect-ratio: 1/1;
+}
+
+.img_dialogbox {
+  height: 4svh; /* Set the fixed height */
+  width: auto;
+  aspect-ratio: 1/1;
+}
+
+
+button {
+  padding: 0.3svw;
+}
+
+.btn_start {
+  height: auto;
+  width:5svw;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border-radius: 10px; /* Adjust the value to control the roundness */
+}
+
+.btn_create {
+  height: auto;
+  width: auto;
+  aspect-ratio: 1/1;
+  background: transparent; /* Set background to transparent */
+  border: none; /* Remove the border */
+}
+
+.btn_explore {
+  height: auto;
+  width: auto;
+  background: transparent; /* Set background to transparent */
+  border: none; /* Remove the border */
+}
+
+/* search input  */
+.search-container {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.search-input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid var(--dark-color);
+  /* margin-right:7px; */
+  border-radius: 5px;
+  margin-left: 10px; /* Add some space between the magnifying glass and input */
+}
+
+.search-button {
+  height: 30px;
+}
+
+.active_marker {
+  border: 5px solid ;
+  border-color:var(--border-color);
+  padding: 3px;
+  width: 50svw;
+  display: flex;
+  flex-direction:row;
+  margin-left: 10px;
+
+}
+
+
+
+@keyframes flashBorder {
+  0% {
+    border-color:var(--animation-color1);  /* Start with a specific color */
+  }
+  50% {
+    border-color:var(--animation-color2);
+  }
+  80% {
+    border-color:var(--animation-color3);
+  }
+  100% {
+    border-color: var(--animation-color4);
+  }
+  100% {
+    border-color: var(--animation-color5); /*last color */
+  }
+}
+
+/* Apply the animation to the element with the "flash" class */
+.flash {
+  border: 0.3svw solid var(--border-light-color); /* Set initial border style and color */
+  animation: flashBorder 3s infinite; /* Apply the animation */
+  animation-delay: 2s;
+}
