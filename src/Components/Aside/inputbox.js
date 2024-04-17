@@ -2,7 +2,7 @@ import { searchQuery } from '../../main.js'
 import { query } from '../../main.js'
 import { apiKey } from '../../config.js'
 import { photosContainer } from '../../main.js'
-import { no_photos } from '../../main.js';
+// import { no_photos } from '../../main.js';
 
 
 // Use async and await to make a single petition to the Unsplash API
@@ -17,9 +17,19 @@ export async function fetchPhotos(page) {
         const photos = data.results;
 
         // Check if the array of photos is empty
+        // if (photos.length === 0) {
+        //     photosContainer.innerHTML = '';
+        //     no_photos.innerHTML = '<p class="no-photos-message">No photos found</p>';
+        //     searchQuery.placeholder = "Type something else";
+        //     return;
+        // }
+
+        const img = document.createElement('img');
+        const link = document.createElement('a');
+
         if (photos.length === 0) {
             photosContainer.innerHTML = '';
-            no_photos.innerHTML = '<p class="no-photos-message">No photos found</p>';
+            photosContainer.innerHTML = '<p class="no-photos-message">No photos found</p>';
             searchQuery.placeholder = "Type something else";
             return;
         }

@@ -23,7 +23,7 @@ import { fetchPhotos } from "./Components/Aside/inputbox.js"
 
 // *****
 export const photosContainer = document.getElementById('photos');
-export const no_photos = document.getElementById('no_photos');
+// export const no_photos = document.getElementById('no_photos');
 export const searchButton = document.getElementById('search-button');
 export var searchQuery = document.getElementById('search-query');
 export var query = "random";
@@ -59,7 +59,7 @@ function logoClick() {
   query = 'random';
   photosContainer.innerHTML = '';
   fetch3times();
-  no_photos.innerHTML = '';
+  // no_photos.innerHTML = '';
 }
 
 //**********  Add the event listener for the logoMP
@@ -77,7 +77,7 @@ searchButton.addEventListener('click', function () {
 
   query = searchQuery.value.trim();
   if (query == "") {
-    no_photos.innerHTML = '';
+    // no_photos.innerHTML = '';
     photosContainer.innerHTML = '';
     searchQuery.placeholder = "type SOMEHTING...  ";
 
@@ -85,7 +85,7 @@ searchButton.addEventListener('click', function () {
   }
   //clean before painting again and 
   photosContainer.innerHTML = '';
-  no_photos.innerHTML = '';
+  // no_photos.innerHTML = '';
   fetch3times();
 });
 

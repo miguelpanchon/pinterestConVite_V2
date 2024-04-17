@@ -38,7 +38,7 @@ main {
 
 }
 
-#photos.no-photos { 
+.no-photos { 
   height: 10px;
   margin-left: 2.5svh;
  }
